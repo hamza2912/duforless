@@ -3,7 +3,10 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
 import Header from './components/header';
 import Footer from './components/footer';
-import './App.css'
+import About from './pages/who';
+import './App.css';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 function App() {
   return (
@@ -14,7 +17,7 @@ function App() {
     <Switch>
 
       <Route exact path="/" component={Home} />
-      <Route path="/about" component={Home} />
+      <Route path="/about" component={About} />
 
     </Switch>
 

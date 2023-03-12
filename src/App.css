@@ -2,11 +2,97 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 .section1{
   background-repeat: no-repeat;
   background-position: 0% 110%, 90% 33.6%;
+}
+
+.dimmer
+{
+    background:#000;
+    opacity:0.5;
+    position:fixed; /* important to use fixed, not absolute */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10; /* may not be necessary */
+}
+
+.rotate-45{
+  transform: rotate(45deg);
+}
+
+.bg-green{
+  background-color: #56b947;
+  background: linear-gradient();
+}
+
+.bg-orange{
+  background-color: #f7941d;
+}
+
+.border-orange{
+  border: solid 1px #f7941d;
+}
+
+.bg-stone{
+  background-color: #161616;
+}
+
+.h-fit{
+  height: fit-content;
+}
+
+.quiz-logo{
+  width: 14rem !important;
+}
+
+.owl-nav{
+  position: absolute;
+  bottom: 10%;
+  right: 18%;
+}
+
+.text-green{
+  color: #56b947;
+}
+
+button.owl-prev, button.owl-next{
+  width: 80px !important;
+  color: white !important;
+  background-color: #56b947 !important;
+
+}
+
+.border-orange:hover{
+  color: black;
+}
+
+.h-quiz{
+  height: 38rem;
+}
+
+.text-orange{
+  color: #f7941d;
+}
+
+.clip-path{
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+a{
+  cursor: pointer;
+}
+
+.messageBox {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .fade-in{
